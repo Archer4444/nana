@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кибербезопасность</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Новый дизайн с выдвижной панелью</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Кибербезопасность</h1>
-        <p>Защита данных и систем</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="threats.html">Угрозы</a></li>
-                <li><a href="protection.html">Защита</a></li>
-                <li><a href="news.html">Новости</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Добро пожаловать в мир кибербезопасности</h2>
-            <p>На этом сайте вы узнаете о главных угрозах, методах защиты и последних новостях из мира кибербезопасности.</p>
-        </section>
-    </main>
+    <!-- Кнопка для открытия панели -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Меню</span>
 
-    <footer>
-        <p>© 2024 Кибербезопасность. Все права защищены.</p>
-    </footer>
+    <!-- Боковая панель -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Услуги</a>
+        <a href="#">Контакты</a>
+    </div>
+
+    <!-- Контент страницы -->
+    <div id="main">
+        <h1>Добро пожаловать на сайт</h1>
+        <p>Здесь будет основной контент страницы.</p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
